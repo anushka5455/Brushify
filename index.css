@@ -1,0 +1,33 @@
+#box{
+    width: 500px;
+    height: 400px;
+    
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10%;
+   max-width: 100%;
+    resize: both;
+}
+.color-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+}
+#fnt-color, #fnt-backgroundcolor, #fnt-style{
+    
+    padding: 10px;
+    border-radius: 20px;
+}
+.fnt-btn {
+    width: auto;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    vertical-align: middle;
+    line-height: normal;
+}

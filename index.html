@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor box</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <center><h1><u><i>Brushify</i></u></h1>
+    <br><br>
+    <div id = "box" contenteditable="true"></div>
+    <br>
+
+
+      <div id="second">
+            <div id="fnt-color">
+                <h2>Select font color</h2>
+                <button class="color-btn" onclick="changeFontColor('pink')" style="background-color: hotpink;"></button>
+                <button class="color-btn" onclick="changeFontColor('yellow')" style="background-color: lightgoldenrodyellow;"></button>
+                <button class="color-btn" onclick="changeFontColor('green')" style="background-color: green;"></button>
+                <button class="color-btn" onclick="changeFontColor('white')"
+                    style="background-color: beige;"></button>
+                <button class="color-btn" onclick="changeFontColor('grey')" style="background-color: grey;"></button>
+            </div>
+            <div id="fnt-backgroundcolor">
+                <h2>Select background color</h2>
+                <button class="color-btn" onclick="changeBackgroundColor('white')"
+                    style="background-color: beige;"></button>
+                <button class="color-btn" onclick="changeBackgroundColor('yellow')"
+                    style="background-color: lightgoldenrodyellow;"></button>
+                <button class="color-btn" onclick="changeBackgroundColor('cyan')"
+                    style="background-color: lightcyan;"></button>
+                <button class="color-btn" onclick="changeBackgroundColor('pink')"
+                    style="background-color: pink;"></button>
+                <button class="color-btn" onclick="changeBackgroundColor('black')"
+                    style="background-color: black;"></button>
+            </div>
+            <div id="fnt-style">
+                <h2>Select font style</h2>
+                <button class="fnt-btn" onclick="changeFontFamily('cursive')" style="font-family: cursive;">type 1</button>
+                <button class="fnt-btn" onclick="changeFontFamily('serif')" style="font-family: serif;">type 2</button>
+                <button class="fnt-btn" onclick="changeFontFamily('sans-serif')" style="font-family: sans-serif;">type 3</button>
+                <button class="fnt-btn" onclick="changeFontFamily('monospace')" style="font-family: monospace;">type 4</button>
+                <button class="fnt-btn" onclick="changeFontFamily('fantasy')" style="font-family: fantasy;">type 5</button>
+            </div>
+        </div>
+</center>
+
+<script>
+ function changeBackgroundColor(clr) {
+            document.getElementById('box').style.backgroundColor = clr;
+        }
+         function changeFontColor(clr) {
+            document.getElementById('box').style.color = clr;
+        }
+         function changeFontFamily(fnt) {
+            document.getElementById('box').style.fontFamily = fnt;
+        }
+
+</script>
+
+</body>
+</html>
